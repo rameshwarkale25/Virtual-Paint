@@ -29,3 +29,24 @@ This project allows users to draw on the screen using **hand gestures** captured
 ---
 
 ## 📂 Project Structure
+Virtual-Paint/
+│
+├── Header/
+│ └── (UI header images for color selection)
+│
+├── HandTrackingModule.py
+├── virtual_paint.py
+├── README.md
+└── requirements.txt
+
+### Workflow
+
+1. Webcam captures live video feed
+2. Hand landmarks detected using HandTrackingModule
+3. Finger positions are analyzed
+4. Based on gestures:
+   - Select color
+   - Draw on canvas
+   - Erase drawings
+5. Canvas is merged with live feed using bitwise operations
+
